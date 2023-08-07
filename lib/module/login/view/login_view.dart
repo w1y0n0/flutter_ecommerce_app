@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hyper_ui/core.dart';
+import 'package:hyper_ui/shared/widget/app_logo/app_logo.dart';
 
 class LoginView extends StatefulWidget {
   const LoginView({Key? key}) : super(key: key);
@@ -23,7 +24,7 @@ class LoginView extends StatefulWidget {
                         Text(
                           "Welcome\nto LabsiStores",
                           style: TextStyle(
-                            fontSize: 20.0,
+                            fontSize: 24.0,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -39,11 +40,7 @@ class LoginView extends StatefulWidget {
                       ],
                     ),
                   ),
-                  Icon(
-                    MdiIcons.googleAds,
-                    size: 64.0,
-                    color: primaryColor,
-                  ),
+                  AppLogo(),
                 ],
               ),
               Spacer(),
@@ -62,7 +59,7 @@ class LoginView extends StatefulWidget {
               ),
               QButton(
                 label: "Login",
-                onPressed: () {},
+                onPressed: () => controller.doLogin(),
               ),
               const SizedBox(
                 height: 12.0,

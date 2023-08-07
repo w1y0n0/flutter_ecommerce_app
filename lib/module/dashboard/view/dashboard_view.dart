@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hyper_ui/core.dart';
+import 'package:hyper_ui/shared/widget/app_logo/app_logo_small.dart';
 
 class DashboardView extends StatefulWidget {
   const DashboardView({Key? key}) : super(key: key);
@@ -9,42 +10,22 @@ class DashboardView extends StatefulWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Dashboard"),
-        actions: const [
-          Padding(
-            padding: EdgeInsets.all(8.0),
-            child: Center(
-              child: Badge(
-                label: Text(
-                  "6",
-                  style: TextStyle(
-                    color: Colors.white,
-                  ),
-                ),
-                child: Icon(MdiIcons.chatQuestion),
-              ),
+        elevation: 0,
+        title: Row(
+          children: [
+            AppLogoSmall(),
+            const SizedBox(
+              width: 4.0,
             ),
-          ),
-          Padding(
-            padding: EdgeInsets.all(8.0),
-            child: Center(
-              child: Badge(
-                label: Text(
-                  "3",
-                  style: TextStyle(
-                    color: Colors.white,
-                  ),
-                ),
-                child: Icon(Icons.notifications),
-              ),
-            ),
-          ),
-        ],
+            const Text("LabsiStores"),
+          ],
+        ),
+        actions: const [],
       ),
       body: SingleChildScrollView(
         child: Container(
-          padding: const EdgeInsets.all(10.0),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: const [],
           ),
         ),
