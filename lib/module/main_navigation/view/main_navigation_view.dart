@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hyper_ui/core.dart';
+import '../controller/main_navigation_controller.dart';
 
 class MainNavigationView extends StatefulWidget {
   const MainNavigationView({Key? key}) : super(key: key);
@@ -7,58 +8,55 @@ class MainNavigationView extends StatefulWidget {
   Widget build(context, MainNavigationController controller) {
     controller.view = this;
 
+    /*
+    TODO: Implement this @ controller
+    int selectedIndex = 0;
+    updateIndex(int newIndex) {
+    selectedIndex = newIndex;
+    setState(() {});
+    }
+    */
     return DefaultTabController(
       length: 4,
       initialIndex: controller.selectedIndex,
       child: Scaffold(
         body: IndexedStack(
           index: controller.selectedIndex,
-          children: const [
+          children: [
             DashboardView(),
+            CartView(),
             OrderView(),
-            FavoriteView(),
             ProfileView(),
           ],
         ),
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: controller.selectedIndex,
           onTap: (newIndex) => controller.updateIndex(newIndex),
+          type: BottomNavigationBarType.shifting,
           items: const [
             BottomNavigationBarItem(
               icon: Icon(
-                MdiIcons.viewDashboard,
+                Icons.dashboard,
               ),
               label: "Dashboard",
             ),
             BottomNavigationBarItem(
-              icon: Badge(
-                label: Text(
-                  "4",
-                  style: TextStyle(
-                    color: Colors.white,
-                  ),
-                ),
-                child: Icon(MdiIcons.table),
+              icon: Icon(
+                Icons.list,
               ),
-              label: "Order",
+              label: "Cart",
             ),
             BottomNavigationBarItem(
-              icon: Badge(
-                label: Text(
-                  "4",
-                  style: TextStyle(
-                    color: Colors.white,
-                  ),
-                ),
-                child: Icon(Icons.favorite),
+              icon: Icon(
+                Icons.favorite,
               ),
-              label: "Favorite",
+              label: "Order",
             ),
             BottomNavigationBarItem(
               icon: Icon(
                 Icons.person,
               ),
-              label: "User",
+              label: "Me",
             ),
           ],
         ),

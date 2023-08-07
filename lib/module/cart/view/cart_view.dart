@@ -1,17 +1,17 @@
 
 import 'package:flutter/material.dart';
 import 'package:hyper_ui/core.dart';
-import '../controller/order_controller.dart';
+import '../controller/cart_controller.dart';
 
-class OrderView extends StatefulWidget {
-    const OrderView({Key? key}) : super(key: key);
+class CartView extends StatefulWidget {
+    const CartView({Key? key}) : super(key: key);
 
-    Widget build(context, OrderController controller) {
+    Widget build(context, CartController controller) {
     controller.view = this;
 
     return Scaffold(
         appBar: AppBar(
-        title: const Text("Order"),
+        title: const Text("Cart"),
         actions: const [],
         ),
         body: SingleChildScrollView(
@@ -26,6 +26,6 @@ class OrderView extends StatefulWidget {
     }
 
     @override
-    State<OrderView> createState() => OrderController();
+    State<CartView> createState() => CartController();
 }
     

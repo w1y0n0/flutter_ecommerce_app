@@ -1,7 +1,17 @@
 {
-  "modules": [],
-  "module_directory_name": "module",
-  "experimental_mode": false,
-  "unfreezed": true,
-  "use_cubit": false
+    "modules": [
+        "debug",
+        "main_navigation",
+        "login",
+        "dashboard",
+        "product_list",
+        "product_detail",
+        "cart",
+        "order",
+        "profile"
+    ],
+    "module_directory_name": "module",
+    "experimental_mode": false,
+    "unfreezed": true,
+    "use_cubit": false
 }
