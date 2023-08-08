@@ -170,6 +170,9 @@ class DashboardView extends StatefulWidget {
                       title: "Discounts",
                       subtitle: "See All",
                     ),
+                    const SizedBox(
+                      height: 8.0,
+                    ),
                     GridView.builder(
                       padding: EdgeInsets.zero,
                       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
