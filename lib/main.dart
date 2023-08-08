@@ -1,4 +1,4 @@
-import 'package:hyper_ui/core.dart';
+import 'package:flutter_ecommerce_app/core.dart';
 import 'package:flutter/material.dart';
 
 void main() async {
@@ -16,7 +16,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Capek Ngoding',
+      title: 'Labsi Project',
       navigatorKey: Get.navigatorKey,
       debugShowCheckedModeBanner: false,
       theme: getDefaultTheme(),

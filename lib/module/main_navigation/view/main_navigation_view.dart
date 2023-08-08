@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hyper_ui/core.dart';
+import 'package:flutter_ecommerce_app/core.dart';
 import '../controller/main_navigation_controller.dart';
 
 class MainNavigationView extends StatefulWidget {

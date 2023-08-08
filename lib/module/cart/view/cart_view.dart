@@ -1,31 +1,29 @@
-
 import 'package:flutter/material.dart';
-import 'package:hyper_ui/core.dart';
+import 'package:flutter_ecommerce_app/core.dart';
 import '../controller/cart_controller.dart';
 
 class CartView extends StatefulWidget {
-    const CartView({Key? key}) : super(key: key);
+  const CartView({Key? key}) : super(key: key);
 
-    Widget build(context, CartController controller) {
+  Widget build(context, CartController controller) {
     controller.view = this;
 
     return Scaffold(
-        appBar: AppBar(
+      appBar: AppBar(
         title: const Text("Cart"),
         actions: const [],
-        ),
-        body: SingleChildScrollView(
+      ),
+      body: SingleChildScrollView(
         child: Container(
-            padding: const EdgeInsets.all(10.0),
-            child: Column(
+          padding: const EdgeInsets.all(10.0),
+          child: Column(
             children: const [],
-            ),
+          ),
         ),
-        ),
+      ),
     );
-    }
+  }
 
-    @override
-    State<CartView> createState() => CartController();
+  @override
+  State<CartView> createState() => CartController();
 }
-    

@@ -1,31 +1,29 @@
-
 import 'package:flutter/material.dart';
-import 'package:hyper_ui/core.dart';
+import 'package:flutter_ecommerce_app/core.dart';
 import '../controller/product_detail_controller.dart';
 
 class ProductDetailView extends StatefulWidget {
-    const ProductDetailView({Key? key}) : super(key: key);
+  const ProductDetailView({Key? key}) : super(key: key);
 
-    Widget build(context, ProductDetailController controller) {
+  Widget build(context, ProductDetailController controller) {
     controller.view = this;
 
     return Scaffold(
-        appBar: AppBar(
+      appBar: AppBar(
         title: const Text("ProductDetail"),
         actions: const [],
-        ),
-        body: SingleChildScrollView(
+      ),
+      body: SingleChildScrollView(
         child: Container(
-            padding: const EdgeInsets.all(10.0),
-            child: Column(
+          padding: const EdgeInsets.all(10.0),
+          child: Column(
             children: const [],
-            ),
+          ),
         ),
-        ),
+      ),
     );
-    }
+  }
 
-    @override
-    State<ProductDetailView> createState() => ProductDetailController();
+  @override
+  State<ProductDetailView> createState() => ProductDetailController();
 }
-    

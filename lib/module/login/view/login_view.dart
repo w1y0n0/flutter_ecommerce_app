@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hyper_ui/core.dart';
-import 'package:hyper_ui/shared/widget/app_logo/app_logo.dart';
+import 'package:flutter_ecommerce_app/core.dart';
+import 'package:flutter_ecommerce_app/shared/widget/app_logo/app_logo.dart';
 
 class LoginView extends StatefulWidget {
   const LoginView({Key? key}) : super(key: key);

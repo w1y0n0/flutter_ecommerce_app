@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hyper_ui/core.dart';
+import 'package:flutter_ecommerce_app/core.dart';
 import '../view/main_navigation_view.dart';
 
 class MainNavigationController extends State<MainNavigationView> {

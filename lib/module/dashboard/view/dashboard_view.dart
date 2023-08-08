@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hyper_ui/core.dart';
-import 'package:hyper_ui/shared/widget/app_logo/app_logo_small.dart';
+import 'package:flutter_ecommerce_app/core.dart';
+import 'package:flutter_ecommerce_app/shared/widget/app_logo/app_logo_small.dart';
 
 class DashboardView extends StatefulWidget {
   const DashboardView({Key? key}) : super(key: key);
