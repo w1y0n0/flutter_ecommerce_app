@@ -169,6 +169,7 @@ class DashboardView extends StatefulWidget {
                     H5(
                       title: "Discounts",
                       subtitle: "See All",
+                      onPressed: () => Get.to(ProductListView()),
                     ),
                     const SizedBox(
                       height: 8.0,
