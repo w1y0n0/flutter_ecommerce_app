@@ -103,80 +103,85 @@ class ProductListView extends StatefulWidget {
                 physics: ScrollPhysics(),
                 itemBuilder: (BuildContext context, int index) {
                   var item = controller.products[index];
-                  return Container(
-                    clipBehavior: Clip.antiAlias,
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        image: NetworkImage(
-                          item["photo"],
+                  return InkWell(
+                    onTap: () => Get.to(ProductDetailView(
+                      item: item,
+                    )),
+                    child: Container(
+                      clipBehavior: Clip.antiAlias,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: NetworkImage(
+                            item["photo"],
+                          ),
+                          fit: BoxFit.cover,
                         ),
-                        fit: BoxFit.cover,
-                      ),
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(
-                          8.0,
-                        ),
-                      ),
-                    ),
-                    child: Stack(
-                      children: [
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.black.withOpacity(0.3),
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(
+                            8.0,
                           ),
                         ),
-                        Positioned(
-                          right: 8,
-                          top: 8,
-                          child: CircleAvatar(
-                            radius: 14.0,
-                            backgroundColor: Colors.white,
-                            child: Icon(
-                              Icons.favorite,
-                              color: Colors.grey,
-                              size: 14.0,
+                      ),
+                      child: Stack(
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.black.withOpacity(0.3),
                             ),
                           ),
-                        ),
-                        Container(
-                          width: MediaQuery.of(context).size.width,
-                          padding: EdgeInsets.all(12.0),
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.end,
-                            children: [
-                              Text(
-                                item["product_name"],
-                                style: TextStyle(
-                                  fontSize: 14.0,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                ),
+                          Positioned(
+                            right: 8,
+                            top: 8,
+                            child: CircleAvatar(
+                              radius: 14.0,
+                              backgroundColor: Colors.white,
+                              child: Icon(
+                                Icons.favorite,
+                                color: Colors.grey,
+                                size: 14.0,
                               ),
-                              const SizedBox(
-                                height: 4.0,
-                              ),
-                              Text(
-                                item["category"],
-                                style: TextStyle(
-                                  fontSize: 12.0,
-                                  color: Colors.white,
-                                ),
-                              ),
-                              const SizedBox(
-                                height: 4.0,
-                              ),
-                              Text(
-                                "${item["price"]}",
-                                style: TextStyle(
-                                  fontSize: 14.0,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                ),
-                              ),
-                            ],
+                            ),
                           ),
-                        ),
-                      ],
+                          Container(
+                            width: MediaQuery.of(context).size.width,
+                            padding: EdgeInsets.all(12.0),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              children: [
+                                Text(
+                                  item["product_name"],
+                                  style: TextStyle(
+                                    fontSize: 14.0,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                const SizedBox(
+                                  height: 4.0,
+                                ),
+                                Text(
+                                  item["category"],
+                                  style: TextStyle(
+                                    fontSize: 12.0,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                const SizedBox(
+                                  height: 4.0,
+                                ),
+                                Text(
+                                  "${item["price"]}",
+                                  style: TextStyle(
+                                    fontSize: 14.0,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   );
                 },
