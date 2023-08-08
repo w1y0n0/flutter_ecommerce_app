@@ -7,6 +7,8 @@ export 'package:flutter_ecommerce_app/config.dart';
 export 'package:flutter_ecommerce_app/core_package.dart';
 export 'package:flutter_ecommerce_app/module/cart/controller/cart_controller.dart';
 export 'package:flutter_ecommerce_app/module/cart/view/cart_view.dart';
+export 'package:flutter_ecommerce_app/module/category_list/controller/category_list_controller.dart';
+export 'package:flutter_ecommerce_app/module/category_list/view/category_list_view.dart';
 export 'package:flutter_ecommerce_app/module/dashboard/controller/dashboard_controller.dart';
 export 'package:flutter_ecommerce_app/module/dashboard/view/dashboard_view.dart';
 export 'package:flutter_ecommerce_app/module/debug/controller/debug_controller.dart';
@@ -41,6 +43,8 @@ export 'package:flutter_ecommerce_app/shared/util/show_snackbar/show_snackbar.da
 export 'package:flutter_ecommerce_app/shared/util/string_extension/string_extension.dart';
 export 'package:flutter_ecommerce_app/shared/util/url_launcher/url_launcher.dart';
 export 'package:flutter_ecommerce_app/shared/util/validator/validator.dart';
+export 'package:flutter_ecommerce_app/shared/widget/app_logo/app_logo.dart';
+export 'package:flutter_ecommerce_app/shared/widget/app_logo/app_logo_small.dart';
 export 'package:flutter_ecommerce_app/shared/widget/form/autocomplete/autocomplete.dart';
 export 'package:flutter_ecommerce_app/shared/widget/form/button/action_button.dart';
 export 'package:flutter_ecommerce_app/shared/widget/form/button/action_button_with_options.dart';

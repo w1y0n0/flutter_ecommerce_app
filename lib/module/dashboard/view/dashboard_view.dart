@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce_app/core.dart';
-import 'package:flutter_ecommerce_app/shared/widget/app_logo/app_logo_small.dart';
 
 class DashboardView extends StatefulWidget {
   const DashboardView({Key? key}) : super(key: key);
@@ -117,6 +116,7 @@ class DashboardView extends StatefulWidget {
                     H5(
                       title: "Categories",
                       subtitle: "See All",
+                      onPressed: () => Get.to(CategoryListView()),
                     ),
                     const SizedBox(
                       height: 8.0,

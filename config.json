@@ -8,7 +8,8 @@
         "product_detail",
         "cart",
         "order",
-        "profile"
+        "profile",
+        "category_list"
     ],
     "module_directory_name": "module",
     "experimental_mode": false,
