@@ -12,7 +12,6 @@ class CategoryListView extends StatefulWidget {
       appBar: AppBar(
         centerTitle: true,
         title: Text("Categories"),
-        elevation: 0.0,
         actions: [],
       ),
       body: ListView.builder(

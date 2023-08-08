@@ -42,7 +42,7 @@ class MainNavigationView extends StatefulWidget {
             ),
             BottomNavigationBarItem(
               icon: Icon(
-                Icons.list,
+                Icons.shopping_basket,
               ),
               label: "Cart",
             ),

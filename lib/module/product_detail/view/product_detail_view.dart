@@ -14,7 +14,6 @@ class ProductDetailView extends StatefulWidget {
 
     return Scaffold(
       appBar: AppBar(
-        elevation: 0.0,
         title: Text("ProductDetail"),
         actions: [
           IconButton(
