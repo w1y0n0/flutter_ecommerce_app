@@ -78,6 +78,7 @@ class _QTextFieldState extends State<QTextField> {
         obscureText: widget.obscure,
         decoration: InputDecoration(
           labelText: widget.label,
+          // fillColor: Colors.grey[200],
           suffixIcon: Icon(
             widget.suffixIcon ?? Icons.abc,
           ),

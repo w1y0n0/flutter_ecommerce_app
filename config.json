@@ -9,6 +9,11 @@
         "cart",
         "order",
         "profile",
+        "edit_profile",
+        "change_password",
+        "faq",
+        "tos",
+        "privacy_policy",
         "category_list"
     ],
     "module_directory_name": "module",
